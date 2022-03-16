@@ -37,6 +37,15 @@ This project will be utilizing the AWS Cloud platform. Therefore, to get started
 The following steps will explain how to create your first Instance.
 
 1. Sign-in to your AWS Cloud Account as the Root user. 
-![](/home/tobi/Documents/CloudProjects/Web-Stack-Implementation/images/awslogin.png)
 
+![](/images/awslogin.png)
 
+2. Type EC2 in the search bar at the top and select EC2 from the search results.
+
+![](/images/EC2select.png)
+
+3. Click on the launch instances button highlighted below
+
+![](/images/launchinstance.png)
+
+4. 
