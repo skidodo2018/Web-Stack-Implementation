@@ -85,13 +85,13 @@ For this project, I'm using Ubuntu to connect to the EC2 instance and will there
 
 ![](/images/apache2.png)
 
-Before we can receive any traffic by our Web Server, we need to open TCP port 80 which is the default port that web browsers use to access web pages on the Internet
+In order for the Web Server to receive, HTTP port 80 needs to be opened. This is the default port that web browsers use to access web pages on the Internet
 
 As we know, we have TCP port 22 open by default on our EC2 machine to access it via SSH, so we need to add a rule to EC2 configuration to open inbound connection through port 80: https://www.youtube.com/watch?v=FMcJ2OGaaP0
 
-* To access locally, run this command $ curl http://localhost:80 or $ curl http://127.0.0.1:80
-* To test how Apache HTTP server can respond to requests from the Internet, open a web browser of your choice and try accessing the following url http://Public-IP-Address:80 (note: insert your EC2 IP Address between the <>)
-* If you see following page, then your web server is now correctly installed and accessible through your firewall.
+* To access the web server locally, run this command $ curl http://localhost:80 or $ curl http://127.0.0.1:80
+* To test how Apache HTTP server can respond to requests from the Internet, open a web browser of your choice and try accessing the following url http://Public-IP-Address:80 (note: replace Public-IP-Address with your EC2 public IP Address)
+* If you see the following page, then your web server is now correctly installed and accessible through your firewall.
 
 ![](/images/apacheubuntupage.png)
 
@@ -239,3 +239,5 @@ phpinfo();`
 When you are finished, save and close the file, refresh the page and you will see a page similar to this:
 
 ![](/images/phppage.png)
+
+And that's it!
