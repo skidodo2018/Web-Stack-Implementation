@@ -154,6 +154,7 @@ Then, create and open a new configuration file in Apache’s `sites-available` d
 
 Paste in the following bare-bones configuration by pressing CTRL+SHIFT+V on the keyboard to enter the insert mode, and paste the text: 
 
+```
 <VirtualHost *:80>
     ServerName projectlamp
     ServerAlias www.projectlamp 
@@ -162,7 +163,7 @@ Paste in the following bare-bones configuration by pressing CTRL+SHIFT+V on the 
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
-
+```
 
 Press CTRL+O to save the file and hit enter
 
@@ -211,10 +212,11 @@ In case you want to change this behavior, you’ll need to edit the **/etc/apac
 
 `sudo nano /etc/apache2/mods-enabled/dir.conf`
 
+```
 <IfModule mod_dir.c>
         #Change this:#DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm#To this:DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
 </IfModule>
-
+```
 
 After saving and closing the file, you will need to reload Apache so the changes take effect:
 
