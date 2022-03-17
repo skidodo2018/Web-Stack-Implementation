@@ -163,6 +163,7 @@ Paste in the following bare-bones configuration by pressing CTRL+SHIFT+V on the 
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>```
 
+
 Press CTRL+O to save the file and hit enter
 
 Type :wq! and then hit enter to save the file and quite. (w = write and q =quit)
