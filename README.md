@@ -167,7 +167,7 @@ Paste in the following bare-bones configuration by pressing CTRL+SHIFT+V on the 
 
 Press CTRL+O to save the file and hit enter
 
-Type :wq! and then hit enter to save the file and quite. (w = write and q =quit)
+Then CTRL+X to exit and get back to command prompt.
 
 You can use the ***`ls`*** command to show the new file in the **sites-available** directory
 
@@ -175,8 +175,7 @@ You can use the ***`ls`*** command to show the new file in the **sites-availa
 
 Now, I have exited out of the editor and have returned to my terminal screen, which should look like this:
 
-
-
+![](/images/sitesavailable.png)
 
 With this VirtualHost configuration, we’re telling Apache to serve `projectlamp` using **/var/www/projectlampl** as its web root directory. If you would like to test Apache without a domain name, you can remove or comment out the options ServerName and ServerAlias by adding a **#** character in the beginning of each option’s lines. Adding the **#** character there will tell the program to skip processing the instructions on those lines.
 
@@ -201,6 +200,8 @@ Your new website is now active, but the web root **/var/www/projectlamp** is s
 `sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html`
 
 Now go to your browser and try to open your website URL using IP address: http://:80
+
+![](/images/hellolamp.png)
 
 If you see the text from ‘echo’ command you wrote to index.html file, then it means your Apache virtual host is working as expected. In the output you will see your server’s public hostname (DNS name) and public IP address. You can also access your website in your browser by public DNS name, not only by IP - try it out, the result must be the same (port is optional): http://:80
 
@@ -237,3 +238,4 @@ phpinfo();`
 
 When you are finished, save and close the file, refresh the page and you will see a page similar to this:
 
+![](/images/phppage.png)
